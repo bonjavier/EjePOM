@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Agregar un nuevo computador" skipped="0" tests="1" time="11.75" timestamp="2022-02-09 06:21:31"><testcase name="Diligenciamiento exitoso del formulario para agregar un nuevo pc"><failure message="Done ! Computer WWWWWWWWWWW has been created" type="java.lang.AssertionError">Done ! Computer WWWWWWWWWWW has been created</failure><system-err>Done ! Computer WWWWWWWWWWW has been created&#13;
+steps.agregarStep.alerta(agregarStep.java:25)&#13;
+definitions.agregarDefinition.se_crea_un_nuevo_pc(agregarDefinition.java:29)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
