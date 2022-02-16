@@ -1,0 +1,28 @@
+#language: es
+
+Característica: Agregar un nuevo computador
+
+  Antecedentes:
+    Dado que el usuario ingresa a la pagina para agregar un pc
+
+  @casoexitoso
+  Esquema del escenario: Diligenciamiento exitoso del formulario para agregar un nuevo pc
+
+    Cuando diligencia el formulario ingresando el nombre <computador>, <ingreso>, <vencimiento>, <compania>"
+    Entonces se crea un nuevo pc
+
+    Ejemplos:
+    |computador|ingreso|vencimiento|compania|
+    |"WWWWWWWWWWW"|"2022-01-01"|"2022-12-01"|5    |
+
+  @casofallido
+  Esquema del escenario: Diligenciamiento del formulario con valores erroneos
+
+    Cuando diligencia el formulario ingresando campos erroneos <computadorFallido>, <ingresoFallido>, <vencimientoFallido>, <companiaFallido>"
+    Entonces no permite registrar porque son valores erroneos
+
+    Ejemplos:
+      |computadorFallido|ingresoFallido|vencimientoFallido|companiaFallido|
+      |""|"2022-01-01"|"2022-12-01"|5   |
+      |"ddd"|"1993/02/01"|"2022-12-01"|5    |
+      |"ddd"|"2022-02-01"|"1993/02/01"|5    |
